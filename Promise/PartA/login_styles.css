@@ -1,0 +1,31 @@
+label {
+    float: left;
+    width: 150px;
+}
+
+#container {
+    width: 700px;
+    margin: auto;
+    background-color: beige;
+}
+
+
+input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+main {
+    padding: 50px;
+}
+
+#emailError,
+#usernameError,
+#passwordError,
+#confirmpasswordError {
+    padding: 4px;
+    color: rgb(245, 31, 31);
+    display: none;
+}

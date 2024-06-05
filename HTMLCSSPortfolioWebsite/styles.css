@@ -1,0 +1,590 @@
+body {
+    padding: 70px;
+    margin-top: 50px;
+    background-color: #343434;
+    color: rgb(211, 206, 206);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    font-size: 13px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(61, 60, 60, 0.8);
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgb(61, 60, 60, 0.8);
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 10px;
+    padding: 5px;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#name {
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(211, 206, 206);
+    margin-right: auto;
+}
+
+li p,
+li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(211, 206, 206);
+}
+
+nav a:hover {
+    background-color: #007bffdd;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.group-right {
+    display: flex;
+    gap: 20px;
+}
+
+.group-right>li {
+    padding: 80;
+}
+
+#about {
+    background-color: rgba(0, 0, 0, 0.393);
+    border-radius: 30px;
+    text-align: left;
+    box-shadow: 0 0 10px #007bffd4;
+    padding: 50px;
+    padding-top: 50px;
+    margin-top: 50px;
+    font-size: 15px;
+    position: relative;
+    scroll-margin-top: 70px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    padding: 50px;
+}
+
+
+#skills a:hover img {
+    transition: transform 0.5s ease;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+
+#exp {
+    padding-top: 50px;
+    margin-top: 70px;
+    scroll-margin-top: 70px;
+}
+
+#sahee {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+
+.round-button {
+    display: inline-block;
+    background-color: #007bffd4;
+    color: rgb(211, 206, 206);
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.round-button:hover {
+    background-color: #0056b3;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: linear-gradient(to bottom, #007bffd4 0%, rgba(255, 255, 255, 0) 50%, #007bffd4 100%);
+    top: 0;
+    bottom: 0;
+    left: 0%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    padding: 45px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.393);
+    border-radius: 30px;
+    width: 45%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.timeline-item::before {
+    content: attr(data-year);
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #007bffd4;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 100px;
+    z-index: 1;
+    float: left;
+}
+
+.timeline::after {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.75);
+}
+
+
+.timeline-item:nth-child(odd) {
+    margin-left: 0;
+    margin-right: auto;
+    box-shadow: 0 0 10px #007bffd4;
+}
+
+.timeline-item:nth-child(even) {
+    margin-left: auto;
+    margin-right: 700px;
+    text-align: center;
+    box-shadow: 0 0 10px #007bffd4;
+}
+
+#edu,
+#exp,
+#projects {
+    margin-top: -10px;
+}
+
+form {
+    position: absolute;
+    top: 49%;
+    right: 0;
+    transform: translateY(-50%);
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 2;
+
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bffd4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 400px;
+}
+
+button:hover {
+    background-color: #534e4e;
+    cursor: pointer;
+}
+
+#projects table {
+    border-collapse: separate;
+    border-spacing: 20px 50px;
+    margin-left: -50px;
+    margin-top: -50px;
+    width: 100;
+    display: flex;
+}
+
+#projects h3.project-title {
+    font-size: 20px;
+}
+
+#projects img {
+    border-radius: 30px;
+}
+
+#projects td:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#projects td {
+    background-color: rgba(0, 0, 0, 0.393);
+    border-radius: 30px;
+    font-size: 14px;
+    transition: transform 0.5s ease;
+}
+
+#projects td[title*="project-desc"] {
+    box-shadow: 0 0 10px #007bffd4;
+}
+
+#vid {
+    margin-top: 50px;
+}
+
+video {
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #007bffd4;
+}
+
+.pos {
+    transform: translateY(-40px);
+    margin-top: 70px;
+}
+
+#contact {
+    padding-top: -50px;
+    scroll-margin-top: 70px;
+    margin-top: 10px;
+    margin-bottom: -70px;
+    margin-left: -50px;
+    float: left;
+}
+
+.connect-container {
+    position: relative;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    float: inherit;
+}
+
+.connect-container {
+    position: relative;
+    height: 600px;
+    display: flex;
+    float: inherit;
+    font-size: 20px;
+    align-items: end;
+}
+
+.connect-image {
+    position: absolute;
+    top: 60px;
+    right: -100px;
+    bottom: 60px;
+    left: -100px;
+    background: url('images/writeimg-transformed.jpeg') no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+}
+
+
+@media screen and (min-width: 350px) and (max-width: 356px) {
+    body {
+        padding: -10px;
+        margin-top: 20px;
+        font-size: xx-small;
+    }
+
+    #about {
+        padding: 30px;
+        width: 90%;
+    }
+
+    #sahee {
+        font-size: medium;
+    }
+
+    summary {
+        font-size: smaller;
+    }
+
+    #name {
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        font-size: small;
+        justify-content: space-around;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .group-right>li {
+        padding: 0px;
+        margin-top: -10px;
+    }
+
+    .group-right {
+        flex-direction: column;
+        gap: 5px;
+        margin-top: -20px;
+    }
+
+    #skills table {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        border-collapse: collapse;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #skills td {
+        margin: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .circle {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        padding: 0;
+        margin: 0;
+    }
+
+    #edu {
+        margin-top: 5px;
+    }
+
+    #exp {
+        margin-top: -5px;
+    }
+
+    #projects {
+        margin-top: -100px;
+    }
+
+    #contact {
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    form {
+        max-width: 300px;
+        padding: 15px;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+
+    #projects table {
+        flex-direction: column;
+        font-size: 5px;
+    }
+
+    #projects img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #projects td {
+        width: 100%;
+        text-align: center;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        font-size: small;
+        display: block;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding: 100px;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        margin-left: 10px;
+        margin-right: auto;
+    }
+
+    .connect-image {
+        top: 0px;
+        bottom: 20px;
+        left: -100px;
+        right: -500px;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    #name {
+        font-size: 40px;
+    }
+
+    #about {
+        margin-top: 500px;
+        padding: 40px;
+        width: 900px;
+        scroll-margin-top: 500px;
+    }
+
+    #sahee {
+        font-size: 40px;
+    }
+
+    summary {
+        font-size: 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        padding: -10px;
+        margin: -10px;
+    }
+
+    .group-right {
+        display: block;
+    }
+
+    .group-right>li {
+        padding: 10px;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    #edu {
+        margin-top: 10px;
+    }
+
+    #exp {
+        scroll-margin-top: 500px;
+    }
+
+    #exp,
+    #projects,
+    #contact {
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    form {
+        max-width: 350px;
+        padding: -50px;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+
+    #projects table {
+        flex-direction: column;
+    }
+
+    #skils td {
+        width: 70%;
+        text-align: center;
+        margin-left: 30px;
+        margin-bottom: 50px;
+        display: block;
+    }
+
+
+    #skills a,
+    #projects a {
+        flex: 1 1 100%;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding: 60px;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        margin-left: 10px;
+        margin-right: auto;
+    }
+
+    .connect-container {
+        position: relative;
+        height: 600px;
+        display: flex;
+        float: inherit;
+        font-size: 20px;
+        align-items: end;
+    }
+
+    .connect-image {
+        top: -30px;
+        bottom: -20px;
+        right: -600px;
+        left: -100px;
+        background-size: cover;
+        z-index: 1;
+    }
+
+
+    #contact {
+        font-size: 20px;
+    }
+}

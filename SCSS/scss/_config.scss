@@ -1,0 +1,25 @@
+$primary-color: rgba(0, 0, 0, 0.795);
+$secondary-color: #916b4a;
+$accent-color: #dcae85;
+$light-background: #f8f8f8;
+$font-size-large: 3rem;
+$font-size-medium: 1.3rem;
+$font-size-small: 1rem;
+$font-stack: 'Times New Roman', Times, serif;
+$border-radius: 10px;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$transition-speed: 0.3s;
+$footer-color: #f5e2d0;
+$image-path: '../images';
+$grid-gap: 20px;
+
+$table-background: #f3f3f3;
+$table-border-color: #d9d9d9;
+$button-background: #47944a;
+$button-hover-background: darken($button-background, 10%);
+$grid-gap: 15px;
+
+
+:root {
+    --transition-bg-color: #{$transition-speed} ease-in-out;
+}

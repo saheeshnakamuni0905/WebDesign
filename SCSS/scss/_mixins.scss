@@ -1,0 +1,18 @@
+@mixin box-shadow($x: 0, $y: 0, $blur: 10px, $color: $shadow-color) {
+    box-shadow: $x $y $blur $color;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%centered {
+    @include flex-center;
+}
+
+@mixin text-common {
+    color: $primary-color;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}

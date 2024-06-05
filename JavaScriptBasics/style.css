@@ -1,0 +1,64 @@
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+.socialmediaicons ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socialmediaicons ul li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.socialmediaicons ul li img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.socialmediaicons {
+  text-align: center;
+}
+
+.hideColumn {
+  display: none;
+}
+
+.dropDownTextArea {
+  display: none;
+}
+
+#myTable input {
+  margin-left: 5px;
+}
+
+#myTable {
+  border: 2px solid green;
+  border-collapse: collapse;
+  margin: 30px 30px 20px 40px;
+}
+
+#myTable td,
+th {
+  border: 1px solid green;
+  padding: 5px;
+}
+
+#myTable th {
+  color: #fff;
+  background-color: #a7c942;
+}
+
+#myTable img {
+  cursor: pointer;
+}
+
+#button {
+  color: #fff;
+  background-color: orange;
+  border-radius: 3px;
+  border: 2px solid gray;
+  margin-left: 180px;
+}

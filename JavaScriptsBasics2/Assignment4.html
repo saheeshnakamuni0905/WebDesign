@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Feedback</title>
+  <style>
+    label {	
+		float: left;
+		width: 150px;
+	}
+      .container{
+          width: 700px;
+          margin: auto;
+          background-color: beige;
+      } 
+      main{
+          padding: 50px;
+      }
+	  #addInst{
+		display: none;
+	  }
+
+	  #firstNError, #lastNError, #emailIdError, #phnoError,
+	  #add1Error, #add2Error, #stateError, #zipcodeError
+	  {
+		padding: 4px;
+		color: rgb(245, 31, 31);
+		display: none;
+	  }
+
+	  table, th, tr, td {
+		padding: 5px;
+		margin: auto;
+		border-collapse: collapse;
+		border: 2px solid black;
+	  }
+
+	  #endTable {
+		max-width: 100%;
+		display: none;
+	  }
+
+  </style>
+ </head>
+ <body>
+ <div class="container">
+	 
+	 <main>
+	 <h2>Feedback</h2>
+	 <h3>Love something? Hate something? Let us know!</h3>
+		 Note : Fields marked with an asterisk(*) are mandatory
+		 <br><br>
+		 <form method="post" id="myForm">
+			<label>Title*:</label>
+			<input type="radio" name="title" id="miss" value="miss" required="required"/>Miss
+			<input type="radio" name="title" id="mr" value="mr" required="required"/>Mr.
+			<input type="radio" name="title" id="mrs" value="mrs" required="required"/>Mrs.
+			<br><br>
+			<label for="firstN">First Name*:</label>
+			<input type="text" name="firstN" id="firstN" placeholder="First Name" required/>	
+			<br><br>
+			
+			<div id="firstNError">
+				Please enter a valid first name!
+			</div>
+
+			<label for="lastN">Last Name*:</label>
+			<input type="text" name="lastN" id="lastN" placeholder="Last Name" required/>
+			<br><br>
+			
+			<div id="lastNError">
+				Please enter a valid last name!
+			</div>
+
+
+			<label for="emailId">Email Id*:</label>
+			<input type="text" name="emailId" id="emailId" placeholder="yourname@domain.com" required/>
+			<br><br>
+			
+			<div id="emailIdError">
+				Please enter a valid Email ID!
+			</div>
+
+			<label for="phno">Phone Number*:</label>
+			<input type="text" name="phno" id="phno" placeholder="xxx-xxx-xxxx" required/>
+			<br><br>
+
+			<div id="phnoError">
+				Please enter a valid phone number!
+			</div>
+
+			<label for="add1">Street Address 1*:</label>
+			<input type="text" name="add1" id="add1" placeholder="address" required/>
+			<br><br>
+
+			<div id="add1Error">
+				Please enter Street Address!
+			</div>
+
+			<label for="add2">Street Address 2:</label>
+			<input type="text" name="add2" id="add2" placeholder="address"/>
+			<br><br>
+
+			<div id="add2Error">
+				Please enter Street Address!
+			</div>
+
+			<label for="state">State*:</label>
+			<input type="text" name="state" id="state" placeholder="state" required/>
+			<br><br>
+
+			<div id="stateError">
+				Please enter valid state name!
+			</div>
+			
+            <label for="zipcode">ZipCode*:</label>
+			<input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" required/>
+			<br><br>
+
+			<div id="zipcodeError">
+				Please enter valid zipcode!
+			</div>
+
+			<label for="drinks">Select a drink*:</label>
+			<select id="drinks" onchange="drinkCheckbox()" required>
+				<option value="none" selected disabled hidden>Select a Beverage</option>
+				<option value="Pepsi">Pepsi(50mL)</option>
+				<option value="Coke">Coke(50mL)</option>
+				<option value="Mojito">Mojito(100mL)</option>
+				<option value="Cold Coffee">Cold Coffee(50mL)</option>
+				<option value="Lemonade">Lemonade(100mL)</option>
+			</select>
+			<br><br>
+
+			<div id="checkbox"></div>
+			<br>
+			<textarea id="addInst" name="addInst" placeholder="Additional instructions" rows="3" cols="30"></textarea>
+			<br>
+			
+             
+            <label for="hearabt">How did you hear*:</label>
+			<input type='checkbox' name="source" value="facebook" /> Facebook
+            <input type='checkbox' name="source" value="google" /> Google
+            <input type='checkbox' name="source" value="yelp" /> Yelp 
+			<br><br> 
+             
+			<label for="comments">Comments*:</label>
+			<textarea name="text" id="comments" placeholder="Your comments" rows="5" cols="25" required></textarea>
+			<br><br>
+			<input type="submit" id="submitBtn" disabled>
+			<input type="Reset">
+			<br><br>
+		 </form>
+		 
+	 </main>
+ </div>
+
+ <div id="endTable">
+	<table id="myTable">
+		<th>Title</th>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Email Id</th>
+		<th>Phone Number</th>
+		<th>StreetAddress 1</th>
+		<th>StreetAddress 2</th>
+		<th>State</th>
+		<th>ZipCode</th>
+		<th>Selected Drink</th>
+		<th>Size</th>
+		<th>Instructions</th>
+		<th>How did you hear</th>
+		<th>Comments</th>
+	</table>
+</div>
+
+ <script src="Assgn4Script.js">
+ 
+ </script>
+
+ </body>
+</html>

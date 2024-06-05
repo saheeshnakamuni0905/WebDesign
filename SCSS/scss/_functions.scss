@@ -1,0 +1,3 @@
+@function color-darken($color, $amount) {
+    @return darken($color, $amount);
+}

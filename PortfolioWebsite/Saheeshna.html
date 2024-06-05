@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/resume-and-cv.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <p id="name">Saheeshna</p>
+                </li>
+                <div class="group-right">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#exp">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="mailto:kamunisaheeshna05@gmail.com">kamunisaheeshna05@gmail.com</a></li>
+                    <li> <a href="javascript:void(0)" onclick="playMusic()">Play Music</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="about">
+        <hr style="border: 2px solid rgb(211, 206, 206); width: 25%; margin: 0; margin-top: 15px;">
+        <p id="sahee">Saheeshna Kamuni</p>
+        <summary>
+            I am an information systems master's student at Northeastern University, set to graduate in
+            2025 with a strong academic record. With a technical background in Java, databases, and web development.
+        </summary>
+        <a href="#exp" class="round-button">
+            <p>V</p>
+        </a>
+    </div>
+
+
+    <div id="vid">
+        <hr style="border: 2px solid rgb(211, 206, 206); width: 20%; margin: 0; margin-top: 5px; margin-bottom: -15px;">
+        <h1>Postioning Statement</h1>
+        <div class="pos">
+            <video controls width="400" height="300">
+                <source src="video/PositioningStatement.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div id="skills">
+        <hr style="border: 2px solid rgb(211, 206, 206); width: 8%; margin: 0; margin-top: 50px; margin-bottom: -15px;">
+        <h1>Technical Skills</h1>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://docs.oracle.com/javase/8/docs/api/" target="_blank"><img src="images/java.jpg"
+                            alt="java" width="100" height="150" class="circle"></a>
+                </td>
+                <td>
+                    <a href="https://dev.mysql.com/doc/" target="_blank"><img src="images/sql.png" width="100"
+                            height="150" alt="sql" class="circle"></a>
+                </td>
+                <td>
+                    <a href="https://docs.python.org/3/" target="_blank"><img src="images/python.png" width="100"
+                            height="150" alt="python" class="circle"></a>
+
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img
+                            src="images/html.png" width="100" height="150" alt="html" class="circle"></a>
+
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="images/css.png"
+                            width="100" height="150" alt="css" class="circle"></a>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+    <div id="exp">
+        <hr
+            style="border: 2px solid rgb(211, 206, 206); width: 10%; margin: 0; margin-top: 25px; margin-bottom: -15px;">
+        <h1>Work experience</h1>
+        <div class="timeline">
+            <div class="timeline-item" data-year="2021-2023">
+                <h3>Application Development Associate - Accenture</h3>
+                <p>As an Application Development Associate at Accenture, I leveraged Atlassian tools to
+                    manage customer issues, significantly reducing critical incidents, and played a key role in
+                    enhancing software reliability through rigorous JUnit testing and diligent website monitoring for
+                    optimal client service.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="edu">
+        <hr style="border: 2px solid rgb(211, 206, 206); width: 8%; margin: 0; margin-top: 50px; margin-bottom: -15px;">
+        <h1>Education</h1>
+        <div class="timeline">
+            <div class="timeline-item" data-year="2023-Present">
+                <h3>Northeastern University - Information Systems</h3>
+                <p><b>Coursework:</b> INFO5100 Application Engineering and Development, INFO6210 Data Management and
+                    Database
+                    Design, INFO6150 Web Design and User Experience, INFO6250 Web Development Tools and Methods </p>
+            </div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item" data-year="2017-2021">
+                <h3>Vasavi College of Engineering - Information Technology</h3>
+                <p><b>Coursework:</b> Database Management Systems, Machine Learning and Artificial Intelligence,
+                    Software
+                    Engineering,
+                    Data Structures and Algorithms, Design and Analysis of Algorithms, Operating Systems</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="sound">
+        <audio id="bg-music" style="display: none;">
+            <source src="audio/TimTaj - The Minimalism.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <script>
+            function playMusic() {
+                var bgMusic = document.getElementById('bg-music');
+                if (bgMusic.paused) {
+                    bgMusic.play();
+                } else {
+                    bgMusic.pause();
+                }
+            }
+        </script>
+    </div>
+
+    <div id="projects">
+        <hr style="border: 2px solid rgb(211, 206, 206); width: 8%; margin: 0; margin-top: 50px; margin-bottom: -15px;">
+        <h1>My Projects</h1>
+        <table>
+            <tr>
+                <td title="project-desc">
+                    <figure>
+                        <img src="images/onlineauction.png" alt="DBMSProject" width="200" height="150">
+                        <h3 class="project-title">Online Auction System</h3>
+                        <figcaption class="project-text">
+                            The Online Auction System project is a dynamic web-based application that leverages the
+                            robustness of MySQL for efficient data storage and retrieval, enabling real-time bidding and
+                            auction management.<br>
+                            <p style="color: greenyellow;">#mysql</p>
+                        </figcaption>
+                    </figure>
+                </td>
+                <td title="project-desc">
+                    <figure>
+                        <img src="images/hms.png" alt="hms image" width="200" height="150">
+                        <h3 class="project-title">Hospital Management System</h3>
+                        <figcaption class="project-text">
+                            Hospital Management System is a comprehensive Java-based application that utilizes Java
+                            Swing for its user interface, offering a user-friendly platform for managing
+                            patient data, appointments, and medical records.
+                            <p style="color: greenyellow;">#java #swing</p>
+                        </figcaption>
+                    </figure>
+                </td>
+                <td title="project-desc">
+                    <figure>
+                        <img src="images/androidSDK.png" alt="sdk image" width="200" height="150">
+                        <h3 class="project-title">RemindEx</h3>
+                        <figcaption class="project-text">
+                            RemindEx crafted with the Android SDK and Java, serves as an innovative
+                            solution that proactively notifies users of a product's impending expiration date.
+                            <p style="color: greenyellow;">#java #androidSDK</p>
+                        </figcaption>
+                    </figure>
+                </td>
+                <td title="project-desc">
+                    <figure>
+                        <img src="images/lms.png" alt="lms image" width="200" height="150">
+                        <h3 class="project-title">Library Management System</h3>
+                        <figcaption class="project-text">
+                            The Library Management System is an efficient and reliable application developed using Java
+                            and MySQL JDBC, designed to streamline the cataloging, borrowing, and returning of books.
+                            <p style="color: greenyellow;">#java #jdbc #mysql</p>
+                        </figcaption>
+                    </figure>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="connect-container">
+        <form action="RegisteredStatus.html" method="post">
+            <h2> Let's connect</h2>
+            <label>Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Message:</label>
+            <input type="text" id="message" name="message">
+
+            <button type=" submit">Send</button>
+            <label>Contact me at <a href="tel:+1234567890">123-456-7890</a></label>
+        </form>
+        <div class="connect-image">
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>&copy; 2024 Professional Portfolio Website. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

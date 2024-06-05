@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="login_styles.css">
+ </head>
+ <body>
+ <div id="container">
+	 <main>
+		 <form method="post" novalidate>
+			<label for="email">Email*:</label>
+			<input type="text" name="email" id="email" placeholder="Email" />	
+			<br><br>
+
+            <div id="emailError">
+				Please enter a valid Email-Id!
+			</div>
+			
+			<label for="username">Username*:</label>
+			<input type="text" name="username" id="username" placeholder="Username" />
+			<br><br>
+
+            <div id="usernameError">
+				Please enter a valid Username!
+			</div>
+			
+			<label for="password">Password*:</label>
+			<input type="password" name="password" id="password" placeholder="Password" />
+			<br><br>
+
+            <div id="passwordError">
+				Please enter a valid Password!
+			</div>
+
+            <label for="confirmpassword">Confirm Password*:</label>
+			<input type="confirmpassword" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" />
+			<br><br>
+
+            <div id="confirmpasswordError">
+				Passwords not matched!
+			</div>
+			
+			<input type="submit" value="Login"/>
+			<br><br>
+		 </form>
+	 </main>
+ </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <script src="script.js"></script>
+
+ </body>
+</html>

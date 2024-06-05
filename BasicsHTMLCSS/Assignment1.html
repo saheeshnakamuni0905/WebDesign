@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="BookClubDesign.css">
+    <title>The Bookworm Society</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to the Bookworm Society</h1>
+    </header>
+
+    <section id="menu">
+        <nav>
+            <ul>
+                <li>
+                    <h3>Home</h3>
+                </li>
+                <li>
+                    <h3>Discussions</h3>
+                </li>
+                <li>
+                    <h3>About</h3>
+                </li>
+                <li>
+                    <h3>Contact</h3>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <summary>
+        <h2>About Us</h2>
+        <p id="summarytext">
+            <i>Bookworm Society</i> is an online community for the bookworms out there who love not only reading but
+            also
+            exploring literature. Join us for engaging book discussions, discover upcoming titles, and connect with
+            fellow book enthusiasts. Explore our latest features such as audiobooks and "Read with me" video for a
+            soothing reading experience.
+        </p>
+    </summary>
+
+
+    <section id="ud">
+        <h2><i>Hello Bookworms !!</i></h2>
+        <h2>Upcoming Book Discussions</h2>
+        <h3>Theme this week: <i>The World War</i></h3>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Date</th>
+                <th>Book Cover</th>
+            </tr>
+            <tr>
+                <td>The Book Thief</td>
+                <td>Markus Zusak</td>
+                <td>January 20, 2024</td>
+                <td><a href="https://www.goodreads.com/book/show/19063.The_Book_Thief?ac=1&from_search=true&qid=QW3E9jbiix&rank=1"
+                        target="_blank">
+                        <img src="images/bookthief.jpg" alt="The Book Thief" width="100" height="150"></a></td>
+            </tr>
+            <tr>
+                <td>The Nightingale</td>
+                <td>Kristin Hannah</td>
+                <td>January 25, 2024</td>
+                <td><a href="https://www.goodreads.com/book/show/21853621-the-nightingale?ac=1&from_search=true&qid=MVZPAZtwfS&rank=2"
+                        target="_blank">
+                        <img src="images/nightingale.jpg" alt="The Nightingale" width="100" height="150"></a></td>
+            </tr>
+            <tr>
+                <td>The Boy in the Striped Pajamas</td>
+                <td>John Boyne</td>
+                <td>January 30, 2024</td>
+                <td><a href="https://www.goodreads.com/book/show/39999.The_Boy_in_the_Striped_Pajamas?ref=nav_sb_ss_1_7"
+                        target="_blank"><img src="images/stripedpyjamas.jpg" alt="The Boy in Striped Pyjamas"
+                            width="100" height="150"></a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="sound">
+        <h2>Audio Books</h2>
+        <h3><i>Sense and Sensibility</i></h3>
+        <h3>First episode of Sense and Sensibility</h3>
+        <audio controls>
+            <source src="audio/senseandsensibility01.mp3" type="audio/mp3">
+        </audio>
+    </section>
+
+    <section id="vid">
+        <h2><i>Read with me</i></h2>
+        <h3>Unlock the power of focus with a this 30 min soothing music crafted for the perfect reading vibe!</h3>
+        <video controls width="400" height="400">
+            <source src="video/studyvideo.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="purchase">
+        <h2><i>Bookworms Recommended</i></h2>
+        <table>
+            <tr>
+                <th>Books</th>
+                <th>Purchase Link</th>
+            </tr>
+            <tr>
+                <td><img src="images/anxiouspeople.jpg" alt="AnxiousPeople" width="200" height="200"></td>
+                <td><a
+                        href="https://www.amazon.com/Anxious-People-A-Novel/dp/B084J91WW9/ref=sr_1_1?crid=1JD6ACQVCF7FN&keywords=anxious+people+by+fredrik+backman&qid=1705365602&s=books&sprefix=anxious+%2Cstripbooks%2C90&sr=1-1">Anxious
+                        People by Fredrick Backman</a>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="images/littlelife.jpg" alt="LittleLife" width="200" height="200"></td>
+                <td><a
+                        href="https://www.amazon.com/A-Little-Life-Novel/dp/B0BJ7W5RTH/ref=sr_1_1?crid=V1SCJ9UAXZA2&keywords=little+life&qid=1705365763&s=audible&sprefix=litte+life%2Caudible%2C88&sr=1-1">
+                        Little Life by Hanya Yanagihara</a></td>
+            </tr>
+            <tr>
+                <td><img src="images/sevenmoons.jpg" alt="SevenMoonsByMaaliAlmeida" width="150" height="150"></td>
+                <td><a
+                        href="https://www.amazon.com/Seven-Moons-Maali-Almeida-ebook/dp/B0BFG2K29B/ref=sr_1_1?crid=1ZPHCQZQMS5MX&keywords=seven+moons+of+maali+almeida+by+shehan+karunatilaka+kindle&qid=1705366017&s=audible&sprefix=seven+moo%2Caudible%2C79&sr=1-1-catcorr">
+                        Seven Moons by Maali Almeida by Shehan Karunatilaka</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="form">
+        <form action="RegisteredStatus.html" method="post">
+            <h2>Join the Book Club</h2>
+            <label>Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Currently reading:</label>
+            <input type="text" id="books" name="books">
+
+            <button type="submit">Join Now</button>
+        </form>
+    </section>
+
+    <section id="topbutton">
+        <form action="#">
+            <button type="submit">Move to top</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact us at <a href="tel:+1234567890">123-456-7890</a> or <a
+                href="mailto:info@bookclub.com">info@bookclub.com</a></p>
+        <p>&copy; 2024 Bookworm Society. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
